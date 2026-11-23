@@ -8,7 +8,7 @@
         <style>
             #text {
                 text-align: center;
-                font-family: "Times New Roman", Times, serif;
+                font-family: "papyrus", "fantasy";
                 font-size: 30px;
             }
             body{
@@ -16,9 +16,29 @@
                 text-align: center;
                 border: 10px solid rgb(216, 86, 0);
             }
+            #ohide{
+                grid-row: 2,2
+            }
         </style>
         <script>
-            function {
+           function LearnMore() {
+              let element=document.getElementById("LearnMore")
+              if(element.style.display == "grid"){
+                get.element.display="loearnMore"
+                //set the button to show more and display none
+              }else{
+                
+                //set the button to show less and display to grid
+              }
+              
+            }
+            function MouseOver() {
+              let element=document.getElementById("ohide")
+              element.style.border="8px solid orange"
+            }
+            function MouseOut() {
+              let element=document.getElementById("ohide")
+              element.style.border="0px red"
             }
         </script>
             <body>
@@ -38,10 +58,13 @@
             <p>
                 Its a valley filled with Hoodoos, which are tall stone structure that have little hats, they also look like goblins from the distance. it is a desert area that stretches on for miles, and it=s one of the most commonly visited places in utah.
             </p>
-            <button id="LearnMore" onclick="LearnMore()">Learn more and resources</button>
-            <h3 id="Hide">Additional Information</h3>
-            <p id="Hide"></p>
-            <h3 id="Hide">Resources</h3>
-            <p id="Hide"></p>
+            <button id="loearnMore" onclick="LearnMore()">Learn more and resources</button>
+            <p id="LearnMore">
+                <h3>Additional Information</h3>
+                <p></p>
+                <h3>Resources</h3>
+                <p></p>
+                <a href="https://www.google.com/imgres?q=goblin%20valley&imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F1%2F14%2FGoblin_Valley_4892280981.jpg%3Futm_source%3Dcommons.wikimedia.org%26utm_campaign%3Dindex%26utm_content%3Doriginal&imgrefurl=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3AGoblin_Valley_4892280981.jpg&docid=6QyGtRdp7hOXwM&tbnid=LBHiaayGYlsBpM&vet=12ahUKEwjbr9SBgJ-YAxXOLEQIHUctEHcQnPAOegUIoAQQAA..i&w=4077&h=2497&hcb=2&itg=1&ved=2ahUKEwjbr9SBgJ-YAxXOLEQIHUctEHcQnPAOegUIoAQQAA" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ8fXjmX5PdLbQn4FXC57X9vXYL2iUvL1VhASoueFfcg&s=10" alt="Goblin Valley" id="ohide" onmouseover="MouseOver()" onmouseout="MouseOut()"></a>
+            </p>
         </body>
     </html>
