@@ -19,16 +19,43 @@
             #ohide{
                 grid-row: 2,2
             }
+            #LearnMore{
+                display: none;
+            }
         </style>
-        <script>
-           function LearnMore() {
+
+            <body>
+            <a href="https://www.flickr.com/photos/53339323@N04/15570444772" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQzpFOZMK_9BuIAxEynUVynl429t9lVjBE8n5vfnmMXQ&s" alt="Goblin Valley" id="Goblin"></a>
+            <h1>Facts and Details</h1>
+            <p id="text">
+                Goblin valley is one of utahs biggest tourist atractions, having multiple different movies filmed there. the place feels magical, with thousands of uniqe structures called hoodoos which are these tall rocks with a hat like tip. its called goblin valley because the some hoodoos look like goblins when you look at them from a distance. this place looks absolutly crazy, being a desert like landscape that looks like it is stretching for miles, and it feels surreal standing in the middle of hoodoos.
+            </p>
+            <h3>Reasons to Go</h3>
+            <ul>
+                <li>it is a very surreal experience, with tall structures and sand going for miles</li>
+                <li>there is a lot of hiking oppertunituies this cliffs and hoodoos to climb</li>
+                <li>you can get the coolest veiw of everything getting to high points letting to see everything around, including all of the hoodoos</li>
+                <li>if your a photographer you can take the best pictures of people here</li>
+            </ul>
+            <h3>Cliff Notes</h3>
+            <p>
+                Its a valley filled with Hoodoos, which are tall stone structure that have little hats, they also look like goblins from the distance. it is a desert area that stretches on for miles, and it=s one of the most commonly visited places in utah.
+            </p>
+            <a href="https://www.google.com/imgres?q=goblin%20valley&imgurl=https%3A%2F%2Flive.staticflickr.com%2F65535%2F54537763622_f3f2557698_b.jpg&imgrefurl=https%3A%2F%2Fflickr.com%2F126288307%40N05%2F54537763622&docid=U86dG6Dxqf3G2M&tbnid=CxKk6ZNsf7VCIM&vet=12ahUKEwjJ_8ebyKGYAxVhJUQIHSJ3KjUQnPAOegQINRAA..i&w=1024&h=776&hcb=2&itg=1&ved=2ahUKEwjJ_8ebyKGYAxVhJUQIHSJ3KjUQnPAOegQINRAA"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrKroFa4xM6uA0jYlyO8YytFs8Uo8aVAOGdYiGrSOyuQ&s" alt="hoodoos"></a>
+            <br>
+            <button id="loearnMore" onclick="LearnMore1()">Learn more</button>
+            <div id="LearnMore">
+                <h3>Additional Information</h3>
+                <p>How goblin valley was discovered was a couple of cowboys looking for cattle. in 1920 Auther Chaffin, oparator of the Hite ferry were searching or a different route between green river and chaineville. at a vantage point a while away they saw the goblin valley in the distance. thats how it was discovered and how it became popular</p>
+                <a href="https://www.google.com/imgres?q=goblin%20valley&imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F1%2F14%2FGoblin_Valley_4892280981.jpg%3Futm_source%3Dcommons.wikimedia.org%26utm_campaign%3Dindex%26utm_content%3Doriginal&imgrefurl=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3AGoblin_Valley_4892280981.jpg&docid=6QyGtRdp7hOXwM&tbnid=LBHiaayGYlsBpM&vet=12ahUKEwjbr9SBgJ-YAxXOLEQIHUctEHcQnPAOegUIoAQQAA..i&w=4077&h=2497&hcb=2&itg=1&ved=2ahUKEwjbr9SBgJ-YAxXOLEQIHUctEHcQnPAOegUIoAQQAA" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ8fXjmX5PdLbQn4FXC57X9vXYL2iUvL1VhASoueFfcg&s=10" alt="Goblin Valley" id="ohide" onmouseover="MouseOver()" onmouseout="MouseOut()"></a>
+            </div>
+            <script>
+            function LearnMore1() {
               let element=document.getElementById("LearnMore")
               if(element.style.display == "grid"){
-                get.element.display="loearnMore"
-                //set the button to show more and display none
+                element.style.display="none"
               }else{
-                
-                //set the button to show less and display to grid
+                element.style.display="grid"
               }
               
             }
@@ -40,31 +67,6 @@
               let element=document.getElementById("ohide")
               element.style.border="0px red"
             }
-        </script>
-            <body>
-            <a href="https://www.flickr.com/photos/53339323@N04/15570444772" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQzpFOZMK_9BuIAxEynUVynl429t9lVjBE8n5vfnmMXQ&s" alt="Goblin Valley" id="Goblin"></a>
-            <h1>Facts and Details</h1>
-            <p id="text">
-                Goblin valley is one of utahs biggest tourist atractions, having multiple different movies filmed there. the place feels magical, with thousands of uniqe structures called hoodoos which are these tall rocks with a hat like tip. its called goblin valley because the some hoodoos look like goblins when you look at them from a distance. this place looks absolutly crazy, being a desert like landscape that looks like it is stretching for miles, and it feels surreal standing in the middle of hoodoos.
-            </p>
-            <h3>Reasons to Go</h3>
-            <ul>
-                <li>Surreal Experience</li>
-                <li>Hiking</li>
-                <li>Cool veiw</li>
-                <li>Photography</li>
-            </ul>
-            <h3>Cliff Notes</h3>
-            <p>
-                Its a valley filled with Hoodoos, which are tall stone structure that have little hats, they also look like goblins from the distance. it is a desert area that stretches on for miles, and it=s one of the most commonly visited places in utah.
-            </p>
-            <button id="loearnMore" onclick="LearnMore()">Learn more and resources</button>
-            <p id="LearnMore">
-                <h3>Additional Information</h3>
-                <p></p>
-                <h3>Resources</h3>
-                <p></p>
-                <a href="https://www.google.com/imgres?q=goblin%20valley&imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F1%2F14%2FGoblin_Valley_4892280981.jpg%3Futm_source%3Dcommons.wikimedia.org%26utm_campaign%3Dindex%26utm_content%3Doriginal&imgrefurl=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3AGoblin_Valley_4892280981.jpg&docid=6QyGtRdp7hOXwM&tbnid=LBHiaayGYlsBpM&vet=12ahUKEwjbr9SBgJ-YAxXOLEQIHUctEHcQnPAOegUIoAQQAA..i&w=4077&h=2497&hcb=2&itg=1&ved=2ahUKEwjbr9SBgJ-YAxXOLEQIHUctEHcQnPAOegUIoAQQAA" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ8fXjmX5PdLbQn4FXC57X9vXYL2iUvL1VhASoueFfcg&s=10" alt="Goblin Valley" id="ohide" onmouseover="MouseOver()" onmouseout="MouseOut()"></a>
-            </p>
+            </script>
         </body>
     </html>
